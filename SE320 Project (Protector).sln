@@ -1,0 +1,34 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{970030D2-EA45-8CA7-AEF7-1F70C07833E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{EE624496-8E61-55AA-34C4-73A144F5E5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{9761F67E-C8CA-B167-363E-EAEB01B5C9B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{970030D2-EA45-8CA7-AEF7-1F70C07833E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970030D2-EA45-8CA7-AEF7-1F70C07833E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970030D2-EA45-8CA7-AEF7-1F70C07833E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970030D2-EA45-8CA7-AEF7-1F70C07833E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE624496-8E61-55AA-34C4-73A144F5E5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE624496-8E61-55AA-34C4-73A144F5E5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE624496-8E61-55AA-34C4-73A144F5E5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE624496-8E61-55AA-34C4-73A144F5E5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9761F67E-C8CA-B167-363E-EAEB01B5C9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9761F67E-C8CA-B167-363E-EAEB01B5C9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9761F67E-C8CA-B167-363E-EAEB01B5C9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9761F67E-C8CA-B167-363E-EAEB01B5C9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
