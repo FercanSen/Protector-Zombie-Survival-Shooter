@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 9498
+  controlID: 164
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 9499
+  controlID: 165
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 9500
+  controlID: 166
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 9524
+  controlID: 78
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,8 +442,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 083d0000
-    m_LastClickedID: 15624
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: e2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -499,9 +499,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 243.1136, y: 15.292549, z: 303.83856}
+    m_Target: {x: 253.43126, y: 19.435493, z: 180.58507}
     speed: 2
-    m_Value: {x: 243.1136, y: 15.292549, z: 303.83856}
+    m_Value: {x: 253.43126, y: 19.435493, z: 180.58507}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -529,9 +529,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.26046258, y: 0.51063097, z: -0.16574515, w: 0.802461}
+    m_Target: {x: 0.17454104, y: 0.77258337, z: -0.24030693, w: 0.5611622}
     speed: 2
-    m_Value: {x: 0.2604626, y: 0.510631, z: -0.16574517, w: 0.8024611}
+    m_Value: {x: 0.17454103, y: 0.77258337, z: -0.24030691, w: 0.5611622}
   m_Size:
     m_Target: 206.27057
     speed: 2
@@ -609,20 +609,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/Environment/Water/Water/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Standard Assets/Environment/Water/Water/Prefabs
+  - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\ferca\Desktop\Mr.Wayne\Ders\SE320 - Introduction to
-    Game Dev\SE320-Project
+  m_LastProjectPath: C:\Users\ferca\Desktop\SE320-Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 259}
-    m_SelectedIDs: 7a3b0000
-    m_LastClickedID: 15226
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 042b0000
+    m_LastClickedID: 11012
     m_ExpandedIDs: 00000000042b0000322f0000802f00004e340000723b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -651,7 +650,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000042b0000322f0000802f00004e340000723b000000ca9a3b
+    m_ExpandedIDs: 00000000042b0000322f0000802f00004e340000723b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
