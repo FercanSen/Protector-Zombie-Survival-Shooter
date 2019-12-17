@@ -13,16 +13,18 @@ public class GunScript : MonoBehaviour {
 
 	[Header("Player movement properties")]
 	[Tooltip("Speed is determined via gun because not every gun has same properties or weights so you MUST set up your speeds here")]
-	public int walkingSpeed = 3;
+	public int walkingSpeed = 5;
 	[Tooltip("Speed is determined via gun because not every gun has same properties or weights so you MUST set up your speeds here")]
-	public int runningSpeed = 5;
+	public int runningSpeed = 8;
 
 
 	[Header("Bullet properties")]
 	[Tooltip("Preset value to tell with how many bullets will our weapon spawn aside.")]
-	public float bulletsIHave = 20;
+	public float bulletsIHave = 180;
 	[Tooltip("Preset value to tell with how much bullets will our weapon spawn inside rifle.")]
-	public float bulletsInTheGun = 5;
+	public float bulletsInTheGun = 40;
+
+	public float bulletsLeft;
 	[Tooltip("Preset value to tell how much bullets can one magazine carry.")]
 	public float amountOfBulletsPerLoad = 5;
 
