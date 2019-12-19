@@ -20,6 +20,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
+
+            target = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
 
@@ -32,6 +34,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 character.Move(agent.desiredVelocity, false, false);
             else
                 character.Move(Vector3.zero, false, false);
+            //if (agent.remainingDistance<1.5f) Used for calculating distance to take damage.
         }
 
 
