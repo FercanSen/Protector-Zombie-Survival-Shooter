@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class BulletScript : MonoBehaviour {
@@ -16,9 +17,9 @@ public class BulletScript : MonoBehaviour {
 	public LayerMask ignoreLayer;
 
 	/*
-	* Uppon bullet creation with this script attatched,
+	* Upon bullet creation with this script attached,
 	* bullet creates a raycast which searches for corresponding tags.
-	* If raycast finds somethig it will create a decal of corresponding tag.
+	* If raycast finds something it will create a decal of corresponding tag.
 	*/
 	void Update () {
 
@@ -28,14 +29,20 @@ public class BulletScript : MonoBehaviour {
 					Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
-				if(hit.transform.tag == "Dummie"){
+				if(hit.transform.name == "ZombieRig(Clone)"){
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
+					Destroy(hit.transform.gameObject);
 				}
+				
 			}		
 			Destroy(gameObject);
 		}
 		Destroy(gameObject, 0.1f);
 	}
 
+	private void OnCollisionEnter(Collision other)
+	{
+		Debug.Log(other.transform.name);
+	}
 }

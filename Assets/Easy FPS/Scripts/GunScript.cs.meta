@@ -1,10 +1,20 @@
 fileFormatVersion: 2
 guid: a804723bdccf04fca985e160ab5f88d5
-timeCreated: 1461941682
-licenseType: Store
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mls: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
+  - bulletSpawnPlace: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 2}
+  - bullet: {fileID: 128836, guid: c9e619a669d974fd28b5c89e43f2bce2, type: 2}
+  - shoot_sound_source: {instanceID: 0}
+  - reloadSound_source: {instanceID: 0}
+  - muzzelSpawn: {instanceID: 0}
+  - HUD_bullets: {instanceID: 0}
+  - horizontal_crosshair: {instanceID: 0}
+  - vertical_crosshair: {instanceID: 0}
+  - handsAnimator: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

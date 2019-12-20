@@ -479,7 +479,7 @@ public class GunScript : MonoBehaviour {
 
 
 
-			yield return new WaitForSeconds (reloadChangeBulletsTime - 0.5f);//minus ovo vrijeme cekanja na yield
+			yield return new WaitForSeconds (reloadChangeBulletsTime - 0.5f);
 			if (meeleAttack == false && pmS.maxSpeed != runningSpeed) {
 				//print ("tu sam");
 				if (player.GetComponent<PlayerMovementScript> ()._freakingZombiesSound)

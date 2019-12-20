@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 114377865875748000}
   m_Layer: 0
   m_Name: ZombieRig
-  m_TagString: Untagged
+  m_TagString: "\xF6l"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,14 +1432,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156058}
-  m_LocalRotation: {x: -0.031163376, y: -0.70559573, z: 0.38172913, w: 0.59619325}
-  m_LocalPosition: {x: 0.00124002, y: 0.0078841755, z: -0.00067265274}
+  m_LocalRotation: {x: 0.4338309, y: -0.39755815, z: 0.61531776, w: 0.5245211}
+  m_LocalPosition: {x: 0.0012399027, y: 0.007884019, z: -0.00067272823}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children:
   - {fileID: 462274}
   m_Father: {fileID: 478576}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 109.203995, y: -159.195, z: -66.026}
 --- !u!4 &412642
 Transform:
   m_ObjectHideFlags: 1
@@ -2278,7 +2278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 136.22, y: 101.08, z: 217.63}
+  m_LocalPosition: {x: 135.70749, y: 101.00458, z: 224.08008}
   m_LocalScale: {x: 0.40189633, y: 0.40189633, z: 0.40189633}
   m_Children:
   - {fileID: 474474}
@@ -2481,14 +2481,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175870}
-  m_LocalRotation: {x: -0.031163376, y: 0.70559573, z: -0.38172913, w: 0.59619325}
-  m_LocalPosition: {x: -0.00124002, y: 0.0078841755, z: -0.00067265274}
+  m_LocalRotation: {x: 0.4430002, y: 0.3059983, z: -0.69569886, w: 0.47551984}
+  m_LocalPosition: {x: -0.0012399027, y: 0.007884019, z: -0.00067272823}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children:
   - {fileID: 482278}
   m_Father: {fileID: 484830}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 122.104996, y: 142.25, z: 47.289993}
 --- !u!4 &493086
 Transform:
   m_ObjectHideFlags: 1
@@ -3276,7 +3276,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162410}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.85633767
   m_Height: 5.9674964

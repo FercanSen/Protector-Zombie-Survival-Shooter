@@ -7,7 +7,7 @@ public class ZombieSpawner : MonoBehaviour
 
 	public GameObject zombiePrefab;
 
-	private float m_SpawnDelay= 10;
+	private float m_SpawnDelay= 2;
 	private float m_NextSpawnTime;
 	
 	
