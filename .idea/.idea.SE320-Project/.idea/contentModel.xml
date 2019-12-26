@@ -5,9 +5,12 @@
     <e p="C:\Users\ferca\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_SE320-Project.-2060611125.00" t="ExcludeRecursive" />
     <e p="C:\Users\ferca\Desktop\Mr.Wayne\Ders\SE320 - Introduction to Game Dev\SE320-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DamageScript.cs" t="Include" />
+        <e p="DeathScreen.cs" t="Include" />
         <e p="Easy FPS" t="Include">
           <e p="Scripts" t="Include">
             <e p="BulletScript.cs" t="Include" />
@@ -18,6 +21,8 @@
             <e p="PlayerMovementScript.cs" t="Include" />
           </e>
         </e>
+        <e p="MainMenu.cs" t="Include" />
+        <e p="PlayerHealth.cs" t="Include" />
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -35,6 +40,25 @@
           </e>
           <e p="Shaders" t="Include">
             <e p="Skybox-Procedural.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Simple Health Bar" t="Include">
+          <e p="_Asteroids Example" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AsteroidController.cs" t="Include" />
+              <e p="GameManager.cs" t="Include" />
+              <e p="HealthPickupController.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+              <e p="PlayerHealth.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="SimpleHealthBarEditor.cs" t="Include" />
+            <e p="SimpleHealthBarWindow.cs" t="Include" />
+          </e>
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="SimpleHealthBar.cs" t="Include" />
           </e>
         </e>
         <e p="Standard Assets" t="Include">
