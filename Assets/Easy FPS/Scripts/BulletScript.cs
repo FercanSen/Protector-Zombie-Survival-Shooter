@@ -16,6 +16,7 @@ public class BulletScript : MonoBehaviour {
 	[Tooltip("Put Weapon layer and Player layer to ignore bullet raycast.")]
 	public LayerMask ignoreLayer;
 
+	public int scoreValue = 10;
 	/*
 	* Upon bullet creation with this script attached,
 	* bullet creates a raycast which searches for corresponding tags.
@@ -33,6 +34,7 @@ public class BulletScript : MonoBehaviour {
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 					Destroy(hit.transform.gameObject);
+					Score.score += scoreValue;
 				}
 				
 			}		

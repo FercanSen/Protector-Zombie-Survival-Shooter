@@ -6,7 +6,6 @@ using UnityEngine;
 public class DamageScript : MonoBehaviour
 {
     float speed=50f;
-
     float damage=1f;
     // Use this for initialization
     void Start () {

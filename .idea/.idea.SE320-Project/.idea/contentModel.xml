@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\ferca\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\ferca\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_SE320-Project.-2060611125.00" t="ExcludeRecursive" />
-    <e p="C:\Users\ferca\Desktop\Mr.Wayne\Ders\SE320 - Introduction to Game Dev\SE320-Project" t="IncludeRecursive">
+    <e p="C:\Users\ferca\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_SE320-Project.-1114081103.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ferca\Desktop\Folders\Ders\SE320 - Introduction to Game Dev\SE320-Project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AmmoSpawner.cs" t="Include" />
         <e p="DamageScript.cs" t="Include" />
         <e p="DeathScreen.cs" t="Include" />
         <e p="Easy FPS" t="Include">
@@ -23,6 +24,7 @@
         </e>
         <e p="MainMenu.cs" t="Include" />
         <e p="PlayerHealth.cs" t="Include" />
+        <e p="RefillAmmo.cs" t="Include" />
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -42,6 +44,7 @@
             <e p="Skybox-Procedural.shader" t="Include" />
           </e>
         </e>
+        <e p="Score.cs" t="Include" />
         <e p="Simple Health Bar" t="Include">
           <e p="_Asteroids Example" t="Include">
             <e p="Scripts" t="Include">

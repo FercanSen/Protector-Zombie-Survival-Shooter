@@ -31,7 +31,7 @@ public class PlayerMovementScript : MonoBehaviour {
 	* Raycasting for meele attacks and input movement handling here.
 	*/
 	void FixedUpdate(){
-		RaycastForMeleeAttacks ();
+		
 
 		PlayerMovementLogic ();
 	}
@@ -207,7 +207,7 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 	RaycastHit hitInfo;
-	private float meleeAttack_cooldown;
+	
 	private string currentWeapo;
 	[Tooltip("Put 'Player' layer here")]
 	[Header("Shooting Properties")]
@@ -225,78 +225,7 @@ public class PlayerMovementScript : MonoBehaviour {
 	*/
 
 
-	public bool been_to_meele_anim = false;
-	private void RaycastForMeleeAttacks(){
-
-
-
-
-		if (meleeAttack_cooldown > -5) {
-			meleeAttack_cooldown -= 1 * Time.deltaTime;
-		}
-
-
-		if (GetComponent<GunInventory> ().currentGun) {
-			if (GetComponent<GunInventory> ().currentGun.GetComponent<GunScript> ()) 
-				currentWeapo = "gun";
-		}
-
-		//middle row
-		ray1 = new Ray (bulletSpawn.position + (bulletSpawn.right*offsetStart), bulletSpawn.forward + (bulletSpawn.right * rayDetectorMeeleSpace));
-		ray2 = new Ray (bulletSpawn.position - (bulletSpawn.right*offsetStart), bulletSpawn.forward - (bulletSpawn.right * rayDetectorMeeleSpace));
-		ray3 = new Ray (bulletSpawn.position, bulletSpawn.forward);
-		//upper row
-		ray4 = new Ray (bulletSpawn.position + (bulletSpawn.right*offsetStart) + (bulletSpawn.up*offsetStart), bulletSpawn.forward + (bulletSpawn.right * rayDetectorMeeleSpace) + (bulletSpawn.up * rayDetectorMeeleSpace));
-		ray5 = new Ray (bulletSpawn.position - (bulletSpawn.right*offsetStart) + (bulletSpawn.up*offsetStart), bulletSpawn.forward - (bulletSpawn.right * rayDetectorMeeleSpace) + (bulletSpawn.up * rayDetectorMeeleSpace));
-		ray6 = new Ray (bulletSpawn.position + (bulletSpawn.up*offsetStart), bulletSpawn.forward + (bulletSpawn.up * rayDetectorMeeleSpace));
-		//bottom row
-		ray7 = new Ray (bulletSpawn.position + (bulletSpawn.right*offsetStart) - (bulletSpawn.up*offsetStart), bulletSpawn.forward + (bulletSpawn.right * rayDetectorMeeleSpace) - (bulletSpawn.up * rayDetectorMeeleSpace));
-		ray8 = new Ray (bulletSpawn.position - (bulletSpawn.right*offsetStart) - (bulletSpawn.up*offsetStart), bulletSpawn.forward - (bulletSpawn.right * rayDetectorMeeleSpace) - (bulletSpawn.up * rayDetectorMeeleSpace));
-		ray9 = new Ray (bulletSpawn.position -(bulletSpawn.up*offsetStart), bulletSpawn.forward - (bulletSpawn.up * rayDetectorMeeleSpace));
-
-		Debug.DrawRay (ray1.origin, ray1.direction, Color.cyan);
-		Debug.DrawRay (ray2.origin, ray2.direction, Color.cyan);
-		Debug.DrawRay (ray3.origin, ray3.direction, Color.cyan);
-		Debug.DrawRay (ray4.origin, ray4.direction, Color.red);
-		Debug.DrawRay (ray5.origin, ray5.direction, Color.red);
-		Debug.DrawRay (ray6.origin, ray6.direction, Color.red);
-		Debug.DrawRay (ray7.origin, ray7.direction, Color.yellow);
-		Debug.DrawRay (ray8.origin, ray8.direction, Color.yellow);
-		Debug.DrawRay (ray9.origin, ray9.direction, Color.yellow);
-
-		if (GetComponent<GunInventory> ().currentGun) {
-			if (GetComponent<GunInventory> ().currentGun.GetComponent<GunScript> ().meeleAttack == false) {
-				been_to_meele_anim = false;
-			}
-			if (GetComponent<GunInventory> ().currentGun.GetComponent<GunScript> ().meeleAttack == true && been_to_meele_anim == false) {
-				been_to_meele_anim = true;
-				//	if (isRunning == false) {
-				StartCoroutine ("MeeleAttackWeaponHit");
-				//	}
-			}
-		}
-
-	}
-
-	/*
-	 *Method that is called if the waepon hit animation has been triggered the first time via Q input
-	 *and if is, it will search for target and make damage
-	 */
-	IEnumerator MeeleAttackWeaponHit(){
-		if (Physics.Raycast (ray1, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray2, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray3, out hitInfo, 2f, ~ignoreLayer)
-			|| Physics.Raycast (ray4, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray5, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray6, out hitInfo, 2f, ~ignoreLayer)
-			|| Physics.Raycast (ray7, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray8, out hitInfo, 2f, ~ignoreLayer) || Physics.Raycast (ray9, out hitInfo, 2f, ~ignoreLayer)) {
-			//Debug.DrawRay (bulletSpawn.position, bulletSpawn.forward + (bulletSpawn.right*0.2f), Color.green, 0.0f);
-			if (hitInfo.transform.tag=="Dummie") {
-				Transform _other = hitInfo.transform.root.transform;
-				if (_other.transform.tag == "Dummie") {
-					print ("hit a dummie");
-				}
-				InstantiateBlood(hitInfo,false);
-			}
-		}
-		yield return new WaitForEndOfFrame ();
-	}
+	
 
 	[Header("BloodForMelleAttaacks")]
 	RaycastHit hit;//stores info of hit;

@@ -91,8 +91,8 @@ public class GunScript : MonoBehaviour {
 		PositionGun();
 
 		Shooting();
-		MeeleAttack();
-		LockCameraWhileMelee ();
+		
+		
 
 		Sprint(); //iff we have the gun you sprint from here, if we are gunless then its called from movement script
 
@@ -217,12 +217,7 @@ public class GunScript : MonoBehaviour {
 	/*
 	* User inputs meele attack with Q in keyboard start the coroutine for animation and damage attack.
 	*/
-	void MeeleAttack(){	
-
-		if(Input.GetKeyDown(KeyCode.Q) && !meeleAttack){			
-			StartCoroutine("AnimationMeeleAttack");
-		}
-	}
+	
 	/*
 	* Sets meele animation to play.
 	*/
@@ -237,18 +232,7 @@ public class GunScript : MonoBehaviour {
 	/*
 	* Setting the mouse sensitvity lower when meele attack and waits till it ends.
 	*/
-	void LockCameraWhileMelee(){
-		if (meeleAttack) {
-			mouseSensitvity_notAiming = 2;
-			mouseSensitvity_aiming = 1.6f;
-			mouseSensitvity_running = 1;
-		} else {
-			mouseSensitvity_notAiming = startLook;
-			mouseSensitvity_aiming = startAim;
-			mouseSensitvity_running = startRun;
-		}
-	}
-
+	
 
 	private Vector3 velV;
 	[HideInInspector]
